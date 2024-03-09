@@ -1,0 +1,2 @@
+SELECT HEX(12);
+-> C

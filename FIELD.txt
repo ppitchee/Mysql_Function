@@ -1,0 +1,9 @@
+คือการค้นหาตำแหน่งString paramiterตัวแรก จากข้อมูล สตริง ที่มีอยู่ ถ้าหาเจอจะคืนค่าเป็นตำแหน่งที่ ถ้าหาไม่เจอจะคืนค่าเป็น0
+SELECT FIELD('ej', 'ej', 'Heja', 'hej', 'foo');
+->1
+
+SELECT FIELD('hej', 'ej', 'Heja', 'hej', 'foo');
+->3
+
+SELECT FIELD('foot', 'ej', 'Heja', 'hej', 'foo');
+->0

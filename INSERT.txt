@@ -1,0 +1,11 @@
+¤×Í¡ÒÃá·Ã¡ÊµÃÔ§·Õè paramiter·Õè1 ´éÇÂ paramiter·Õè4 â´Â àÃÔèÁ¨Ò¡µÓáË¹è§·Õè paramiter·Õè2 ¹Ñºä»¡ÕèµÑÇ¨Ò¡ paramiter·Õè3
+
+SELECT INSERT('Quadratic', 3, 4, 'What');
+-> 'QuWhattic'
+
+SELECT INSERT('Quadratic', -1, 4, 'What');
+-> 'Quadratic'
+
+SELECT INSERT('Quadratic', 3, 100, 'What');
+-> 'QuWhat'
+

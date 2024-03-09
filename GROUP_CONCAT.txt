@@ -1,0 +1,9 @@
+คือการรวมสตริง
+GROUP_CONCAT('op','poom')
+->oppoom
+GROUP_CONCAT(committee_name)
+GROUP_CONCAT(committee_name ORDER BY committee_id desc)
+
+
+
+

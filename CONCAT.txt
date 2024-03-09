@@ -1,0 +1,6 @@
+คือการต่อสริง ห้ามมีค่า nullผลลัพธ์จะเป็น  nullทั้นที
+SELECT CONCAT('My', 'S', 'QL');
+->MySQL
+
+SELECT CONCAT('My', NULL, 'QL');
+->NULL

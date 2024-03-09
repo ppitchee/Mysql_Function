@@ -1,0 +1,16 @@
+¤×Í¡ÒÃµÑ´ÊµÃÔ§¢Í§ paramiter·Õè1 ´éÇÂ paramiter·Õè2 áÅÐÊµÃÔ§µÑÇ·Õè paramiter·Õè1 
+
+
+SELECT SUBSTRING_INDEX('www.mysql.com', '.', 1);
+-> 'www'
+
+SELECT SUBSTRING_INDEX('www.mysql.com', '.', -1);
+-> '.com'
+
+SELECT SUBSTRING_INDEX('www.mysql.com', '.', 2);
+-> 'www.mysql'
+
+SELECT SUBSTRING_INDEX('www.mysql.com', '.', -2);
+-> 'mysql.com'
+
+

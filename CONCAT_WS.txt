@@ -1,0 +1,3 @@
+คือการต่อสริงแบบมีตัวขั้นระหว่างคำจาก paramiter ตัวแรก
+SELECT CONCAT_WS('**' , 'First name','Second name','Last Name');
+->First name**Second name**Last Name

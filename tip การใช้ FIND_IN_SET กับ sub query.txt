@@ -1,0 +1,35 @@
+SELECT FIND_IN_SET(2,
+  (
+   select group_concat(student_id)
+   from
+   (
+     SELECT student_id,1 as test
+     from student
+     union
+     SELECT student_id,1 as test
+     from student
+   )as TT
+   group by test
+  )
+) as tests
+
+//----------------------------------------
+
+SELECT
+case
+when
+  FIND_IN_SET(1,
+    (
+     select group_concat(student_id order by test desc)
+     from
+     (
+       SELECT student_id,1 as test
+       from student
+       union
+       SELECT student_id,1 as test
+       from student
+     )as TT
+     group by test
+    )
+  ) > '0'
+then '1' else '0' end as statusfind

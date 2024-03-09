@@ -1,0 +1,6 @@
+คือการทำสตริงให้เป็นตัวใหญ่ให้หมด
+
+SELECT UPPER('qUaDraTIcAllY');
+-> 'QUADRATICALLY'
+
+

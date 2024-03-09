@@ -1,0 +1,9 @@
+คือการเลือก สตริง จาก paramiter ตัวแรก
+SELECT ELT(1, 'ej', 'Heja', 'hej', 'foo');
+->ej
+
+SELECT ELT(2, 'ej', 'Heja', 'hej', 'foo');
+->Heja
+
+SELECT ELT(4, 'ej', 'Heja', 'hej', 'foo');
+->foo

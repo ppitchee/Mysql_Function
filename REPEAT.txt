@@ -1,0 +1,5 @@
+¤×Í¡ÒÃ·Ó«éÓ¢Í§ paramiter·Õè1 «éÓ´éÇÂ¨Ó¹Ç¹ paramiter·Õè2
+
+SELECT REPEAT('MySQL', 3);
+-> 'MySQLMySQLMySQL'
+

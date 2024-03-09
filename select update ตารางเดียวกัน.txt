@@ -1,0 +1,3 @@
+update accomodation a
+join accomodation c on a.country_id=c.country_id
+set a.country=c.country;

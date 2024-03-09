@@ -1,0 +1,19 @@
+DELIMITER $$
+ CREATE PROCEDURE `Capitalize`(INOUT str VARCHAR(1024))
+ BEGIN
+ 	DECLARE i INT DEFAULT 1;
+ 	DECLARE myc, pc CHAR(1);
+  	DECLARE outstr VARCHAR(1000) DEFAULT str;
+  	WHILE i <= CHAR_LENGTH(str) DO
+ 		SET myc = SUBSTRING(str, i, 1);
+ 		SET pc = CASE WHEN i = 1 THEN ' ' 
+ 			      ELSE SUBSTRING(str, i - 1, 1) 
+ 			 END;
+ 		IF pc IN (' ', '&', '''', '_', '?', ';', ':', '!', ',', '-', '/', '(', '.') THEN
+ 		    SET outstr = INSERT(outstr, i, 1, UPPER(myc));
+ 		END IF;
+ 		SET i = i + 1;
+ 	END WHILE;
+ 	SET str = outstr;
+ END$$
+ DELIMITER ;  

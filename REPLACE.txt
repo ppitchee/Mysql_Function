@@ -1,0 +1,7 @@
+¤×Í¡ÒÃá·¹·ÕèÊµÃÔ§¢Í§ paramiter·Õè1 ´éÇÂ paramiter·Õè3 â´Â¤é¹ËÒ¨Ò¡ paramiter·Õè1 ´éÇÂ paramiter·Õè2
+
+SELECT REPLACE('www.mysql.com', 'w', 'Ww');
+-> 'WwWwWw.mysql.com'
+
+SELECT REPLACE('op$poom', '$', 'LOVE');
+-> 'opLOVEpoom'

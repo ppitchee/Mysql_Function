@@ -1,0 +1,4 @@
+LOAD DATA INFILE 'C:\\AppServ\\DataFile.txt'
+INTO TABLE cust_num_names
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\r\n';

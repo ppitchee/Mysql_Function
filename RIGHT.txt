@@ -1,0 +1,4 @@
+¤×Í¡ÒÃµÑ´ÊµÃÔ§¨Ò¡·èÒ§¢ÇÒ¨Ó¹Ç¹ paramiter·Õè2
+
+SELECT RIGHT('foobarbar', 5);
+->arbar

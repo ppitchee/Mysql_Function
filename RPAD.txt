@@ -1,0 +1,16 @@
+¤×Í¡ÒÃµèÍÊµÃÔ§·Ò§´éÒ¹¢ÇÒ¢Í§ paramiter·Õè1 ´éÇÂ paramiter·Õè3 áÅÐãËéáÊ´§¨Ó¹Ç¹ÊµÃÔ§·Ñé§ËÁ´ ´éÇÂ paramiter·Õè2
+
+SELECT RPAD('hi',1,'??');
+-> 'h'
+
+SELECT RPAD('hi',2,'??');
+-> 'hi'
+
+SELECT RPAD('hi',3,'??');
+-> 'hi?'
+
+SELECT RPAD('hi',4,'??');
+-> 'hi??'
+
+SELECT RPAD('hi',7,'??');
+-> 'hi?????'

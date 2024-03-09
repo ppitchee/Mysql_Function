@@ -1,0 +1,29 @@
+SELECT NOW();
+2010-04-29 10:23:07
+
+
+SELECT CURRENT_DATE();
+2010-04-29
+
+
+SELECT DAYNAME(NOW());
+Thursday
+
+
+SELECT MONTHNAME(NOW());
+April
+
+
+SELECT DAYOFWEEK(NOW());
+5
+
+
+SELECT DAYOFYEAR(NOW());
+119
+
+
+SELECT MONTH(NOW()) AS m, DAYOFMONTH(NOW()) AS d, HOUR(NOW()) AS h, MINUTE(NOW()) AS m, SECOND(NOW()) AS s;
+4, 29, 10, 35, 20
+
+
+UPDATE contact SET contact_detail = REPLACE(contact_detail,'bts','FBT');	//case sensitive

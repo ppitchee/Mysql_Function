@@ -1,0 +1,4 @@
+¤×Í¡ÒÃµÑ´ÊµÃÔ§¨Ò¡·èÒ§«éÒÂ¨Ó¹Ç¹ paramiter·Õè2
+
+SELECT LEFT('foobarbar', 5);
+->fooba

@@ -1,0 +1,6 @@
+คือการทำสตริงให้เป็นตัวเล็กให้หมด
+
+SELECT LOWER('QUADRATICALLY');
+-> 'quadratically'
+
+

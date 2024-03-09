@@ -1,0 +1,4 @@
+คือการแสดงสตริงจากหลังมาหน้า
+
+SELECT REVERSE('mktgw');
+->wgtkm

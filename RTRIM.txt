@@ -1,0 +1,7 @@
+คือการตัดช่องว่างหน้าสตริงท่างด้านขวาออก
+
+SELECT LTRIM('barbar   ');
+-> 'barbar'
+
+SELECT LTRIM('  barbar   ');
+-> '  barbar'

@@ -1,0 +1,17 @@
+คือการตัดช่องว่างทั้งด้านซ้ายและด้ายขวา
+
+SELECT TRIM('  bar   ');
+-> 'bar'
+
+SELECT TRIM(LEADING 'x' FROM 'xxxbarxxx');//ตัด xทางซ้าย
+-> 'barxxx'
+
+SELECT TRIM(BOTH 'x' FROM 'xxxbarxxx');//ตัด xทั้งทางซ้ายและขวา
+-> 'bar'
+
+SELECT TRIM(TRAILING 'xyz' FROM 'barxxyz');//ตัด xทางขวา
+-> 'barx'
+
+
+
+
