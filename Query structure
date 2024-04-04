@@ -1,0 +1,59 @@
+CustomerID  ,KeyWebsite (*)     13 table
+user_id     ,key_direct (**)    640 table
+UserID      ,KeyDirect          23 table
+userid      ,keydirect          2 table
+
+-- found CustomerID, KeyWebsite
+SELECT
+    CONCAT(
+        'UPDATE ', TABLE_SCHEMA, '.', TABLE_NAME, ' SET ',
+        COLUMN_NAME, '=', '222',
+        ' WHERE ', COLUMN_NAME, '=111',
+        ' AND KeyWebsite=xyz;' 
+    ) AS command
+FROM information_schema.columns
+WHERE COLUMN_NAME = 'CustomerID'
+ORDER BY table_name,ordinal_position
+;
+
+-- found user_id, key_direct
+SELECT
+    CONCAT(
+        'UPDATE ', TABLE_SCHEMA, '.', TABLE_NAME, ' SET ',
+        COLUMN_NAME, '=', '222',
+        ' WHERE ', COLUMN_NAME, '=111',
+        ' AND key_direct=xyz;' 
+    ) AS command
+FROM information_schema.columns
+WHERE COLUMN_NAME = 'user_id'
+ORDER BY table_name,ordinal_position
+;
+
+-- found UserID, KeyDirect
+SELECT
+    CONCAT(
+        'UPDATE ', TABLE_SCHEMA, '.', TABLE_NAME, ' SET ',
+        COLUMN_NAME, '=', '222',
+        ' WHERE ', COLUMN_NAME, '=111',
+        ' AND KeyDirect=xyz;' 
+    ) AS command
+FROM information_schema.columns
+WHERE BINARY COLUMN_NAME = 'UserID'
+ORDER BY table_name,ordinal_position
+;
+
+-- found userid, keydirect
+SELECT
+    CONCAT(
+        'UPDATE ', TABLE_SCHEMA, '.', TABLE_NAME, ' SET ',
+        COLUMN_NAME, '=', '222',
+        ' WHERE ', COLUMN_NAME, '=111',
+        ' AND keydirect=xyz;' 
+    ) AS command
+FROM information_schema.columns
+WHERE BINARY COLUMN_NAME = 'userid'
+ORDER BY table_name,ordinal_position
+;
+
+SELECT * FROM INFORMATION_SCHEMA.VIEWS  // à¸”à¸¹ view
+SELECT * FROM INFORMATION_SCHEMA.TABLES // à¸”à¸¹ table
